@@ -1,0 +1,19 @@
+<div class="jumbotron jumbotron- bg-secondary p-5">
+    <div class="container">
+      <h1 class="display-4 text-light">Latest News and Trends</h1>
+      <p class="lead text-light">Technology</p>
+    </div>
+</div>
+
+<div class="container-fluid mt-5">
+    <div class="row">
+        <div *ngFor="let t of TechNews" class="col-lg-3 mt-3 mb-3">
+            <div class="box" style="height: 350px;">
+                <img src="{{t.urlToImage}}" width="100%">
+                <h5 class="mt-2 mb-2">{{t.title}}</h5>
+                <!-- <h5>{{d.content}}</h5> -->
+                <a href="{{t.url}}" target="_blank" class="btn btn-dark btn-sm mt-2">Read More</a>
+                </div>
+        </div>
+    </div>
+</div>
